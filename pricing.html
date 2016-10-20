@@ -56,7 +56,7 @@
 <body class="pricing">
 
     <!-- Nav -->
-    <nav class="navbar navbar-default navbar-transparent navbar-fixed-top navbar-color-on-scroll" id="sectionsNav">
+    <nav class="navbar navbar-default navbar-fixed-top" id="sectionsNav">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -67,7 +67,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="index.html">
-					<img src="img/soundoff-white-horizontal.png" width="160" />
+					<img src="img/soundoff-fullcolor-horizontal.png" width="140" />
 				</a>
             </div>
 
@@ -281,8 +281,6 @@
 
             </div>
         </footer>
-		<img src="img/soundoff-black-horizontal.png" width="0" style="display: none;" />
-		<img src="img/soundoff-fullcolor-horizontal.png" width="0" style="display: none;" />
     </div>
 
 
@@ -314,14 +312,6 @@
 	        else {window.attachEvent('onload', _onload)}
 	    }());
 
-		$(window).on('scroll', function(e) {
-			if($('.navbar').hasClass('navbar-transparent')) {
-				$('.navbar-brand').html('<img src="img/soundoff-white-horizontal.png" width="160" />');
-			}
-			else {
-				$('.navbar-brand').html('<img src="img/soundoff-fullcolor-horizontal.png" width="160" />');
-			}
-		});
 	</script>
 </body>
 
