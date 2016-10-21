@@ -42,6 +42,7 @@
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="assets/css/material-kit.css" rel="stylesheet"/>
     <link href="assets/css/mobile.css" rel="stylesheet"/>
+    <link href="assets/css/animate.css" rel="stylesheet"/>
 
 	<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -51,9 +52,15 @@
 	  	ga('create', 'UA-85626060-1', 'auto');
 	  	ga('send', 'pageview');
 	</script>
+
+	<style>
+		.morphext > .animated {
+	    	display: inline-block;
+		}
+	</style>
 </head>
 
-<body class="pricing">
+<body class="pricing presentation-page">
 
     <!-- Nav -->
     <nav class="navbar navbar-default navbar-fixed-top" id="sectionsNav">
@@ -101,7 +108,7 @@
                     </li>
 
 					<li>
-						<a href="https://app.soundoff.io/register" class="btn btn-rose btn-round">
+						<a href="https://app.soundoff.io/onboarding" class="btn btn-rose btn-round">
                             <i class="material-icons">person_add</i>&nbsp;&nbsp;Create My Account
                         </a>
 					</li>
@@ -112,25 +119,215 @@
     <!-- /Nav -->
 
 
-	<div class="page-header header-filter" data-parallax="active" style="background-image: url('../assets/img/so_bg.jpg');">
+	<div class="page-header header-filter clear-filter" data-parallax="active" style="background-image: url('../assets/img/so_bg.jpg');">
 		<div class="container">
     		<div class="row">
-        		<div class="col-md-8 col-md-offset-2">
-                    <h1 class="title">Let's get started</h1>
-                    <!-- <h4>To get started, you will need to choose a plan for your needs. You can opt in for the monthly of annual options and go with one fo the three listed below.</h4> -->
+        		<div class="col-md-12">
+                    <h1 class="title">Focus your time on <span id="js-rotating">Mixing, Producing, Writing, Mastering</span></h1>
+                    <h4>
+						Get started with Soundoff for FREE today
+					</h4>
                 </div>
             </div>
         </div>
 	</div>
 
 	<div class="main main-raised">
+		<div class="pricing-5 section-gray">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<h2 class="title">Start your free 14-day free trial or get your feet wet with a demo account.</h2>
+						<ul class="nav nav-pills" role="tablist">
+							<li class="">
+								<a href="#monthly" role="tab" data-toggle="tab" aria-expanded="false">
+									Monthly
+								</a>
+							</li>
+							<li class="active">
+								<a href="#yearly" role="tab" data-toggle="tab" aria-expanded="true">
+									Yearly
+								</a>
+							</li>
+						</ul>
+
+						<p class="text-gray">Need help? Want to schedule a demo? Shoot us an email support@soundoff.io</p>
+					</div>
+
+					<div class="col-md-7 col-md-offset-1">
+						<div class="tab-content tab-space">
+							<div class="tab-pane" id="monthly">
+
+								<div class="col-md-6">
+									<div class="card card-pricing card-plain">
+										<div class="content">
+											<h6 class="category">Demo</h6>
+											<h1 class="card-title"><small>$</small>0</h1>
+											<ul>
+												<li><b>1</b> Project</li>
+												<li><b>Unlimited</b> Revisions</li>
+												<li><b>Unlimited</b> Collaborators</li>
+												<li><b>MP3's</b> up to 10MB</li>
+											</ul>
+											<a href="https://app.soundoff.io/onboarding" class="btn btn-white btn-round">
+												Sign Up
+											</a>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-6">
+									<div class="card card-pricing card-raised">
+										<div class="content">
+											<h6 class="category">Pro</h6>
+											<h1 class="card-title"><small>$</small>15<small>/Mon</small></h1>
+											<ul>
+												<li><b>Unlimited</b> Projects</li>
+												<li><b>Unlimited</b> Revisions</li>
+												<li><b>Unlimited</b> Collaborators</li>
+												<li><b>WAV &amp; MP3's</b> up to 100MB</li>
+											</ul>
+											<a href="https://app.soundoff.io/onboarding" class="btn btn-primary btn-round">
+												Start 14-day Free Trial
+											</a>
+										</div>
+									</div>
+								</div>
+
+							</div>
+
+							<div class="tab-pane active" id="yearly">
+								<div class="col-md-6">
+									<div class="card card-pricing card-plain">
+										<div class="content">
+											<h6 class="category">Demo</h6>
+											<h1 class="card-title"><small>$</small>0</h1>
+											<ul>
+												<li><b>1</b> Project</li>
+												<li><b>Unlimited</b> Revisions</li>
+												<li><b>Unlimited</b> Collaborators</li>
+												<li><b>MP3's</b> up to 10MB</li>
+											</ul>
+											<a href="https://app.soundoff.io/onboarding" class="btn btn-white btn-round">
+												Sign Up
+											</a>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-6">
+									<div class="card card-pricing card-raised">
+										<div class="content">
+											<h6 class="category">Pro</h6>
+											<h1 class="card-title"><small>$</small>10<small>/Mon</small></h1>
+											<ul>
+												<li><b>Save $60!</b></li>
+												<li><b>Unlimited</b> Projects</li>
+												<li><b>Unlimited</b> Revisions</li>
+												<li><b>Unlimited</b> Collaborators</li>
+												<li><b>WAV &amp; MP3's</b> up to 100MB</li>
+											</ul>
+											<a href="https://app.soundoff.io/onboarding" class="btn btn-primary btn-round">
+												Start 14-day Free Trial
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="features-2">
+			<div class="text-center">
+				<h3 class="title">Frequently Asked Questions</h3>
+			</div>
+			<div class="row">
+				<div class="col-md-4 col-md-offset-2">
+					<div class="info info-horizontal">
+						<div class="icon icon-info">
+							<i class="material-icons">card_membership</i>
+						</div>
+						<div class="description">
+							<h4 class="info-title">Can I cancel my subscription?</h4>
+							<p>Yes, you can cancel your subscription at any time.</p>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="col-md-4">
+					<div class="info info-horizontal">
+						<div class="icon icon-success">
+							<i class="material-icons">sd_storage</i>
+						</div>
+						<div class="description">
+							<h4 class="info-title">How much file storage is included?</h4>
+							<p>You have unlimited storage space with each plan.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 col-md-offset-2">
+					<div class="info info-horizontal">
+						<div class="icon icon-success">
+							<i class="material-icons">attach_money</i>
+						</div>
+						<div class="description">
+							<h4 class="info-title">Which payment methods do you take?</h4>
+							<p>Currently we only accept credt and visa debit. All payments are secured by <a href="https://stripe.com" target="_blank">Stripe</a>.</p>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="col-md-4">
+					<div class="info info-horizontal">
+						<div class="icon icon-rose">
+							<i class="material-icons">archiver</i>
+						</div>
+						<div class="description">
+							<h4 class="info-title">How long are files archived?</h4>
+							<p>Forever</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="main main-raised">
 		<div class="container">
-            <div class="pricing-2">
+            <!-- <div class="pricing-2">
+				<div class="row">
+
+					<div class="col-md-6 col-md-offset-3 text-center">
+    					<ul class="nav nav-pills nav-pills-rose" role="tablist">
+    						<li class="">
+    							<a href="#monthly" class="" role="tab" data-toggle="tab" aria-expanded="false">
+    								Monthly
+    							</a>
+    						</li>
+    						<li class="active">
+    							<a href="#yearly" role="tab" data-toggle="tab" aria-expanded="true">
+    								Yearly
+    							</a>
+    						</li>
+    					</ul>
+    				</div>
+
+				</div>
+
+
                 <div class="row">
 					<div class="col-md-6">
 						<div class="card card-pricing card-plain">
 							<div class="content">
-								<h6 class="category text-info">Free <small>(Test the waters)</small></h6>
+								<h6 class="category text-info">Demo</h6>
 								<h1 class="card-title"><small>$</small>0<small>/mo</small></h1>
 								<ul>
 									<li><b>1</b> Project</li>
@@ -149,7 +346,9 @@
 						<div class="card card-pricing card-raised">
 							<div class="content content-rose">
 								<h6 class="category text-info">Pro</h6>
-								<h1 class="card-title"><small>$</small>15<small>/mo</small></h1>
+								<h1 class="card-title">
+									<small>$</small>10<small>/mo (Yearly)</small>
+								</h1>
 								<ul>
 									<li><b>Unlimited</b> Projects</li>
 									<li><b>Unlimited</b> Revisions</li>
@@ -169,65 +368,8 @@
 						Just need an account for collaborating and commenting? <a href="https://app.soundoff.io/register">That's free</a>.
 					</p>
 				</div>
-            </div>
-            <hr />
-            <div class="features-2">
-                <div class="text-center">
-                    <h3 class="title">Frequently Asked Questions</h3>
-                </div>
-                <div class="row">
-    				<div class="col-md-4 col-md-offset-2">
-    		           	<div class="info info-horizontal">
-    						<div class="icon icon-info">
-    							<i class="material-icons">card_membership</i>
-    						</div>
-    						<div class="description">
-    							<h4 class="info-title">Can I cancel my subscription?</h4>
-    							<p>Yes, you can cancel your subscription at any time.</p>
-    						</div>
-    		        	</div>
+            </div> -->
 
-    		        </div>
-
-    				<div class="col-md-4">
-    					<div class="info info-horizontal">
-    						<div class="icon icon-success">
-    							<i class="material-icons">sd_storage</i>
-    						</div>
-    						<div class="description">
-    							<h4 class="info-title">How much file storage is included?</h4>
-    							<p>You have unlimited storage space with each plan.</p>
-    						</div>
-    					</div>
-    				</div>
-                </div>
-                <div class="row">
-    				<div class="col-md-4 col-md-offset-2">
-    		           	<div class="info info-horizontal">
-    						<div class="icon icon-success">
-    							<i class="material-icons">attach_money</i>
-    						</div>
-    						<div class="description">
-    							<h4 class="info-title">Which payment methods do you take?</h4>
-    							<p>Currently we only accept credt and visa debit. All payments are secured by <a href="https://stripe.com" target="_blank">Stripe</a>.</p>
-    						</div>
-    		        	</div>
-
-    		        </div>
-
-    				<div class="col-md-4">
-    					<div class="info info-horizontal">
-    						<div class="icon icon-rose">
-    							<i class="material-icons">archiver</i>
-    						</div>
-    						<div class="description">
-    							<h4 class="info-title">How long are files archived?</h4>
-    							<p>Files are archived forever on paid plan. 1 year on free plans.</p>
-    						</div>
-    					</div>
-    				</div>
-                </div>
-            </div>
         </div>
 
 
@@ -311,6 +453,74 @@
 	        if (window.addEventListener) {window.addEventListener('load', _onload, false);}
 	        else {window.attachEvent('onload', _onload)}
 	    }());
+
+
+		// https://github.com/MrSaints/Morphext
+		(function ($) {
+		    "use strict";
+
+		    var pluginName = "Morphext",
+		        defaults = {
+		            animation: "bounceIn",
+		            separator: ",",
+		            speed: 2000,
+		            complete: $.noop
+		        };
+
+		    function Plugin (element, options) {
+		        this.element = $(element);
+
+		        this.settings = $.extend({}, defaults, options);
+		        this._defaults = defaults;
+		        this._init();
+		    }
+
+		    Plugin.prototype = {
+		        _init: function () {
+		            var $that = this;
+		            this.phrases = [];
+
+		            this.element.addClass("morphext");
+
+		            $.each(this.element.text().split(this.settings.separator), function (key, value) {
+		                $that.phrases.push($.trim(value));
+		            });
+
+		            this.index = -1;
+		            this.animate();
+		            this.start();
+		        },
+		        animate: function () {
+		            this.index = ++this.index % this.phrases.length;
+		            this.element[0].innerHTML = "<span class=\"animated " + this.settings.animation + "\">" + this.phrases[this.index] + "</span>";
+
+		            if ($.isFunction(this.settings.complete)) {
+		                this.settings.complete.call(this);
+		            }
+		        },
+		        start: function () {
+		            var $that = this;
+		            this._interval = setInterval(function () {
+		                $that.animate();
+		            }, this.settings.speed);
+		        },
+		        stop: function () {
+		            this._interval = clearInterval(this._interval);
+		        }
+		    };
+
+		    $.fn[pluginName] = function (options) {
+		        return this.each(function() {
+		            if (!$.data(this, "plugin_" + pluginName)) {
+		                $.data(this, "plugin_" + pluginName, new Plugin(this, options));
+		            }
+		        });
+		    };
+		})(jQuery);
+
+
+		$("#js-rotating").Morphext();
+
 
 	</script>
 </body>
